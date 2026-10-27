@@ -149,7 +149,7 @@ export default function Hero() {
               <figure className="relative overflow-hidden rounded-[1.8rem] border border-white/70 bg-white/40 p-1.5 shadow-[0_40px_90px_-40px_rgba(6,18,15,.45)] backdrop-blur-sm sm:rounded-[2.2rem]">
                 <div className="relative overflow-hidden rounded-[1.45rem] sm:rounded-[1.8rem]">
                   <img
-                    src="/images/hero-living.jpg"
+                    src="images/hero-living.jpg"
                     alt="مجلس حديث في الرياض بعد تركيب مكيف سبليت أنيق على الجدار"
                     className="aspect-[4/5] w-full object-cover transition-transform duration-[1400ms] ease-out hover:scale-[1.03] sm:aspect-[5/5.4]"
                     width={880}

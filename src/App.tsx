@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SocialProof from "./components/SocialProof";
@@ -11,8 +12,11 @@ import Faq from "./components/Faq";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 import FloatingActions from "./components/FloatingActions";
+import { initOutboundTracking } from "./utils/analytics";
 
 export default function App() {
+  useEffect(() => initOutboundTracking(), []);
+
   return (
     <div className="relative min-h-screen bg-paper">
       <Navbar />

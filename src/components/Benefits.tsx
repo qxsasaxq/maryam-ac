@@ -19,7 +19,7 @@ export default function Benefits() {
               <div aria-hidden="true" className="absolute -inset-3 rounded-[2.4rem] border border-brand-600/15" />
               <figure className="relative overflow-hidden rounded-[1.8rem] border border-white/70 bg-white/40 p-1.5 shadow-[0_40px_80px_-44px_rgba(6,18,15,.5)]">
                 <img
-                  src="/images/technician.jpg"
+                  src="images/technician.jpg"
                   alt="فني تكييف من مؤسسة مريم يركّب مكيفاً سبليت بدقة في أحد منازل الرياض"
                   loading="lazy"
                   width={920}

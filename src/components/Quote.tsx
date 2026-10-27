@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { areasByCity, serviceOptions, site } from "../data";
 import { cn } from "../utils/cn";
 import { Icon, Reveal, WhatsAppIcon, buttonStyles } from "./ui";
+import { trackLead } from "../utils/analytics";
 
 type Fields = { name: string; phone: string; city: string; service: string; area: string; notes: string };
 type Errors = Partial<Record<keyof Fields, string>>;
@@ -61,7 +62,7 @@ export default function Quote() {
     const next: Errors = {};
     if (fields.name.trim().length < 2) next.name = "اكتب اسمك الكامل (حرفان على الأقل).";
     if (!/^(?:05\d{8}|5\d{8}|9665\d{8})$/.test(normalizePhone(fields.phone))) {
-      next.phone = "أدخل رقم جوال سعودي صحيح، مثل 0553842197.";
+      next.phone = "أدخل رقم جوال سعودي صحيح، مثل 0567562010.";
     }
     if (!fields.city) next.city = "اختر مدينة الخدمة.";
     if (!fields.service) next.service = "اختر نوع الخدمة المطلوبة.";
@@ -82,6 +83,7 @@ export default function Quote() {
     await new Promise((resolve) => setTimeout(resolve, 750));
     setReference(`MR-${String(10000 + (Date.now() % 89999))}`);
     setStatus("success");
+    trackLead({ service: fields.service, city: fields.city });
   };
 
   const successWhatsApp =

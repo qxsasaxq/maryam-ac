@@ -60,10 +60,10 @@ export const services: Service[] = [
     featured: true,
   },
   {
-    icon: "wind",
-    title: "تركيب مركزي ودكت",
-    description: "تصميم مسارات الهواء وتركيب الوحدات المخفية للفلل والمساحات الكبيرة بأحمال محسوبة.",
-    price: "حسب الأحمال",
+    icon: "wrench",
+    title: "فك ونقل وتركيب المكيفات",
+    description: "فك الوحدة القديمة وتغليفها ونقلها بأمان، وإعادة تركيبها في موقعها الجديد مع اختبار تشغيل كامل.",
+    price: "يبدأ من 299 ر.س",
   },
   {
     icon: "droplets",
@@ -110,7 +110,7 @@ export const gallery: GalleryItem[] = [
     title: "فيلا الياسمين",
     location: "حي الياسمين",
     category: "فلل",
-    image: "/images/villa.jpg",
+    image: "images/villa.jpg",
     scope: "تركيب 5 وحدات سبليت مع تمديد نحاس مخفي",
     meta: "5 وحدات • يوم واحد",
     description:
@@ -123,7 +123,7 @@ export const gallery: GalleryItem[] = [
     title: "شقة الملقا",
     location: "حي الملقا",
     category: "شقق",
-    image: "/images/bedroom.jpg",
+    image: "images/bedroom.jpg",
     scope: "تركيب سبليت 30,000 BTU لغرفة رئيسية",
     meta: "وحدة واحدة • 3 ساعات",
     description:
@@ -136,20 +136,20 @@ export const gallery: GalleryItem[] = [
     title: "مكتب العليا",
     location: "حي العليا",
     category: "مكاتب",
-    image: "/images/office.jpg",
-    scope: "وحدة دكت مركزي و4 مكيفات سبليت",
-    meta: "5 وحدات • يومان",
+    image: "images/office.jpg",
+    scope: "تركيب 4 وحدات سبليت للمكاتب وقاعة الاجتماعات",
+    meta: "4 وحدات • يومان",
     description:
-      "تنفيذ خارج ساعات العمل للحفاظ على بيئة المكتب. اشتغلنا على توزيع الهواء بين المكاتب وقاعات الاجتماعات مع فصل كل منطقة بتحكم مستقل.",
-    highlights: ["تنفيذ مسائي دون تعطيل العمل", "تحكم مستقل لكل منطقة", "فحص كفاءة وتوازن الهواء قبل التسليم"],
-    alt: "مكتب حديث واسع مع تكييف مركزي ووحدات سبليت",
+      "تنفيذ خارج ساعات العمل للحفاظ على بيئة المكتب. وزّعنا أربع وحدات سبليت على المكاتب وقاعة الاجتماعات بحيث تخدم كل منطقة بشكل مستقل، مع تمديدات مخفية داخل الجدران.",
+    highlights: ["تنفيذ مسائي دون تعطيل العمل", "تحكم مستقل لكل مكتب", "اختبار تشغيل كل وحدة قبل التسليم"],
+    alt: "مكتب حديث واسع مع وحدات تكييف سبليت على الجدار",
   },
   {
     id: "narjis-majlis",
     title: "مجلس النرجس",
     location: "حي النرجس",
     category: "فلل",
-    image: "/images/majlis.jpg",
+    image: "images/majlis.jpg",
     scope: "تبديل وحدة قديمة بسبليت إنفرتر",
     meta: "وحدة واحدة • 4 ساعات",
     description:
@@ -162,7 +162,7 @@ export const gallery: GalleryItem[] = [
     title: "شقة الكورنيش",
     location: "حي الشاطئ — الدمام",
     category: "شقق",
-    image: "/images/hero-living.jpg",
+    image: "images/hero-living.jpg",
     scope: "تركيب وحدتين سبليت إنفرتر بإطلالة على الكورنيش",
     meta: "وحدتان • 5 ساعات",
     description:
@@ -318,7 +318,7 @@ export const pricing: Record<"install" | "maintenance", Plan[]> = {
         "4 زيارات صيانة سنوية",
         "أولوية دعم طوال العام",
         "قطع غيار بخصم 10%",
-        "تنظيف شبكة الدكت مرة سنوياً",
+        "فحص التمديدات الكهربائية مرة سنوياً",
         "تقرير دوري لصحة المكيفات",
       ],
       cta: "اطلب عرض عقد الصيانة",
@@ -464,7 +464,7 @@ export const neighborhoods = [...areasByCity["الرياض"], ...areasByCity["ا
 
 export const serviceOptions = [
   "تركيب مكيف سبليت",
-  "تركيب مركزي / دكت",
+  "فك ونقل مكيفات",
   "صيانة وغسيل مكيفات",
   "شحن وفحص فريون",
   "تمديد نحاس وكهرباء",
